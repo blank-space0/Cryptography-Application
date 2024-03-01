@@ -104,12 +104,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;SODIUM_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>"C:\Users\alexs\OneDrive\Documents\Local Projects\CryptographyAPI\libsodium\include"</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Roadsinger\OneDrive\Documents\GitHub\Cryptography_Project\GuiAPI\Cryptography-Application\libsodium\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>"C:\Users\alexs\OneDrive\Documents\Local Projects\CryptographyAPI\libsodium\x64\Release\v143\static"</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\Roadsinger\OneDrive\Documents\GitHub\Cryptography_Project\GuiAPI\Cryptography-Application\libsodium\x64\Release\v143\static;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>"libsodium.lib";%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
