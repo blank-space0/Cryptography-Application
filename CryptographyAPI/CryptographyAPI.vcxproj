@@ -70,6 +70,10 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>"C:\Users\18325\OneDrive\Desktop\College Work\Software Engineering\CryptographyAPI\libsodium\x64\Release\v143\static\libsodium.lib";C:\Users\18325\OneDrive\Desktop\College Work\Software Engineering\CryptographyAPI\libsodium\include;$(IncludePath)</IncludePath>
+    <LibraryPath>"C:\Users\18325\OneDrive\Desktop\College Work\Software Engineering\CryptographyAPI\libsodium\x64\Debug\v143\static\libsodium.lib";$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -109,8 +113,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>"C:\Users\alexs\OneDrive\Documents\Local Projects\CryptographyAPI\libsodium\x64\Release\v143\static"</AdditionalLibraryDirectories>
-      <AdditionalDependencies>"libsodium.lib";%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"C:\Users\18325\OneDrive\Desktop\College Work\Software Engineering\CryptographyAPI\libsodium\x64\Debug\v143\static"</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libsodium.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -135,6 +139,7 @@
   <ItemGroup>
     <ClInclude Include="Encrypt.h" />
     <ClInclude Include="Decrypt.h" />
+    <ClInclude Include="Account.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
